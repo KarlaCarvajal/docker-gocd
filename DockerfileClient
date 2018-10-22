@@ -1,0 +1,5 @@
+FROM gocd/gocd-agent-ubuntu-16.04:v18.10.0
+
+RUN apt-get update
+RUN apt-get install -y ruby-full ant maven nano
+RUN gem install bundler
